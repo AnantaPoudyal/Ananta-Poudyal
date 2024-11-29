@@ -1,0 +1,190 @@
+/* General styling for text transformation */
+* {
+    text-transform: capitalize;
+}
+
+/* Common box styling for various sections */
+.container, .about-container, .about-section, .skill-container {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill container styling */
+.skill-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #c4cdd5;
+}
+
+/* Skill title styling */
+.skill-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Skill list styling */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual skill item styling */
+.skill-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill name styling */
+.skill-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Star styling */
+.star {
+    font-size: 20px;
+    margin-right: 3px;
+    display: inline-block;
+    color: #ccc; /* Default empty star color */
+}
+
+.star.filled i, .star.half i {
+    color: #FFD700; /* Gold color for filled and half-filled stars */
+}
+
+.star.half i {
+    position: relative;
+    overflow: hidden;
+    width: 50%; /* Display half of the star */
+}
+
+/* Empty stars */
+.star.empty i {
+    color: #ccc; /* Gray color for empty stars */
+}
+
+/* ***********HOMEPAGE************** */
+
+/* Outer container styling */
+.outer-container {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Inner photo styling */
+.inner-photo {
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Inner description styling */
+.inner-description {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f9f9f9; */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* About section styling */
+.about-container {
+    background: #fff;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.about-section {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+    transform: translateY(-5px);
+}
+
+/* About section title and detail styling */
+.about-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-detail {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.about-detail p {
+    margin-bottom: 15px;
+}
+
+/* Container max-width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-detail {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.contact-info i {
+    margin-right: 10px;
+}
