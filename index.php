@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="/css/styles.css">
    </head>
 <body>
-   <?php 
-   include "navbar.php";
-   ?>
-
+hello hi
     <!-- Main Content Section -->
     <div class="container">
         <div class="outer-container">
