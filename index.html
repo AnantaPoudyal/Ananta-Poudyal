@@ -154,9 +154,10 @@
                 <table class="min-w-full table-auto" id="projectsTable">
                     <thead>
                         <tr>
-                            <th class="px-4 py-2 text-left text-gray-900">Project Name</th>
+                            <th class="px-4 py-2 text-left text-gray-900">SN</th>
                             <th class="px-4 py-2 text-left text-gray-900">Description</th>
                             <th class="px-4 py-2 text-left text-gray-900">Technologies Used</th>
+                            <th class="px-4 py-2 text-left text-gray-900">Databases</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -221,19 +222,16 @@
 
         const projectData = [
             {
-                "name": "Project One",
                 "description": "a simple sample project based on laravel",
                 "technologies": "HTML, CSS, JavaScript, Laravel",
                 "databases": "MySQL",
             },
             {
-                "name": "Project Two",
                 "description": "Online Cloth recommendation system",
                 "technologies": "HTML, CSS, JavaScript, Django",
                 "databases": "MySQL",
             },
             {
-                "name": "Project Three",
                 "description": "online food odering system",
                 "technologies": "HTML, CSS, JavaScript, ASP.NET",
                 "databases": "MySQL",
@@ -244,10 +242,10 @@
             const tableBody = document.querySelector('#projectsTable tbody');
             tableBody.innerHTML = ''; // Clear existing rows
 
-            data.forEach(project => {
+            data.forEach((project,index) => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td class="border px-4 py-2 hover-card">${project.name}</td>
+                    <td class="border px-4 py-2 hover-card">${index + 1}</td>
                     <td class="border px-4 py-2 hover-card">${project.description}</td>
                     <td class="border px-4 py-2 hover-card">${project.technologies}</td>
                     <td class="border px-4 py-2 hover-card">${project.databases}</td>
