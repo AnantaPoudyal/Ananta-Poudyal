@@ -6,7 +6,7 @@ function displayDate() {
     const timeStr = `${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
     const ampm = (now.getHours() >= 12 ? 'PM' : 'AM')+"&nbsp&nbsp";
 
-    const timeDiv = document.getElementById("time_p");
+    const timeDiv = document.getElementById("time");
     timeDiv.innerHTML = `${dateStr} ${timeStr} ${ampm}`;
 
     setTimeout(displayDate, 1000);
