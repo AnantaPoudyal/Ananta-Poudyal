@@ -4,261 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ananta Poudyal</title>
+    <title>Ananta Poudyal | Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        *{
-            text-transform: capitalize;
-            text-align: justify;
-         
-        }
-        /* Background Fade-In Animation */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        body {
-    min-width: 300px;
-}
-        /* Navbar Hover Effects */
-        .navbar-link {
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-
-        .navbar-link:hover {
-            color: #1d4ed8;
-            transform: scale(1.1);
-        }
-
-        /* Button Hover Effects */
-        .hover-button:hover {
-            transform: scale(1.1);
-            background-color: #2563eb;
-            color: white;
-            transition: 0.3s ease;
-        }
-
-        /* Smooth Fade-In for Sections */
-        .fade-in-section {
-            opacity: 0;
-            animation: fadeIn 1s forwards;
-        }
-
-        /* Adding some cool animations to the cards and project tables */
-        .hover-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        .table tr:hover {
-            background-color: #f3f4f6;
-        }
-
-        /* Animation delay for different sections */
-        #about {
-            animation-delay: 0.5s;
-        }
-
-        #projects {
-            animation-delay: 1s;
-        }
-
-        #education {
-            animation-delay: 1.5s;
-        }
-
-        #contact {
-            animation-delay: 2s;
-        }
-
-        /* Navbar dropdown for mobile view */
-        .navbar-mobile-menu {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .navbar-mobile-menu {
-                display: block;
-            }
-
-            .navbar-link {
-                display: none;
-            }
-
-            .navbar-link-mobile {
-                display: block;
-                padding: 10px;
-                text-align: center;
-                background-color: #f3f4f6;
-                border-top: 1px solid #ccc;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 text-gray-800">
 
     <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-screen-xl mx-auto px-4 py-2 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="#" class="flex items-center space-x-3">
-                <img src="./images/123.jpeg" alt="Logo" class="w-12 h-12 rounded-full">
-                <span class="text-2xl font-semibold text-gray-900">Ananta Poudyal</span>
+    <nav class="bg-white/80 backdrop-blur-lg shadow-lg sticky top-0 z-50 rounded-b-2xl">
+        <div class="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-4">
+                <img src="./images/my.jpeg" alt="Logo"
+                    class="w-16 h-16 rounded-full shadow-lg border-2 border-purple-400">
+                <span class="text-3xl font-bold text-purple-700 tracking-wide">Ananta Poudyal</span>
             </a>
-            <!-- Navbar Links -->
-            <div class="hidden md:flex space-x-6">
-                <a href="#about" class="navbar-link text-lg text-gray-700">About</a>
-                <a href="#contact" class="navbar-link text-lg text-gray-700">Contact</a>
-                <a href="#education" class="navbar-link text-lg text-gray-700">Education</a>
-                <a href="#projects" class="navbar-link text-lg text-gray-700">Projects</a>
+            <div class="hidden md:flex space-x-8 text-lg font-medium text-gray-700">
+                <a href="#about" class="hover:text-purple-600 transition">About</a>
+                <a href="#projects" class="hover:text-purple-600 transition">Projects</a>
+                <a href="#education" class="hover:text-purple-600 transition">Education</a>
+                <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
             </div>
-                <p id="time" class="text-lg text-gray-700"></p>
-            <!-- Mobile Menu Button -->
-            <button class="navbar-mobile-menu md:hidden text-gray-700 focus:outline-none" id="menuButton">
-                <i class="fas fa-bars"></i>
+            <button id="menuButton" class="md:hidden text-purple-700 hover:text-purple-900 focus:outline-none">
+                <i class="fas fa-bars fa-lg"></i>
             </button>
+            <p id="time" class="ml-4 hidden md:block text-gray-700 font-semibold"></p>
         </div>
-        <!-- Mobile Menu Links -->
-        <div id="mobileMenu" class="hidden md:hidden">
-            <a href="#about" class="navbar-link-mobile text-lg text-gray-700 py-2">About</a>
-            <a href="#contact" class="navbar-link-mobile text-lg text-gray-700 py-2">Contact</a>
-            <a href="#education" class="navbar-link-mobile text-lg text-gray-700 py-2">Education</a>
-            <a href="#projects" class="navbar-link-mobile text-lg text-gray-700 py-2">Projects</a>
-        </div>
-        <div  class="hidden md:hidden">
-            <p id="time"></p>
+        <div id="mobileMenu" class="hidden md:hidden bg-white/90 rounded-b-xl shadow-lg px-6 py-4 space-y-2">
+            <a href="#about" class="block text-gray-700 hover:text-purple-600">About</a>
+            <a href="#projects" class="block text-gray-700 hover:text-purple-600">Projects</a>
+            <a href="#education" class="block text-gray-700 hover:text-purple-600">Education</a>
+            <a href="#contact" class="block text-gray-700 hover:text-purple-600">Contact</a>
         </div>
     </nav>
 
-   
+    <!-- Hero Section -->
+ <!-- Hero Section -->
+<section id="hero" class="relative h-screen flex items-center fade-in-section bg-gradient-to-r from-purple-500 via-pink-400 to-blue-400">
+    <!-- Overlay for subtle effect -->
+    <div class="absolute inset-0 bg-black/20"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="text-center md:text-left space-y-6">
+            <h1 id="heroName" class="text-5xl md:text-6xl font-extrabold text-white leading-tight"></h1>
+            <p id="heroDesc" class="text-lg md:text-xl text-white/90"></p>
+            <a href="#contact" 
+               class="inline-block mt-4 px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 shadow-lg hover:scale-105 transition transform">
+               Get in Touch
+            </a>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="flex justify-center md:justify-end">
+            <div class="relative">
+                <img id="heroImage" src="" alt="Profile" 
+                     class="w-64 h-64 md:w-72 md:h-72 rounded-full border-4 border-white shadow-2xl object-cover">
+                <!-- Decorative circle behind image -->
+                <div class="absolute -inset-2 rounded-full border-4 border-white/30 animate-pulse"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-200 fade-in-section">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center text-gray-900">About Me</h2>
-            <p class="mt-4 text-lg text-gray-700 text-justify">I am a web developer with basic knowledge of HTML, CSS, JavaScript, Laravel, Django, and ASP.NET. I enjoy creating dynamic and functional websites and am always eager to learn and improve my skills by staying updated with the latest industry trends.</p>
+    <section id="about" class="py-20 fade-in-section bg-gradient-to-r from-purple-50 via-pink-50 to-blue-50">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center md:justify-end">
+                <img id="aboutImage" src="" alt="Profile"
+                    class="w-72 h-72 rounded-3xl shadow-2xl border-4 border-purple-300 object-cover">
+            </div>
+            <div class="space-y-6">
+                <h2 id="aboutTitle" class="text-4xl font-extrabold text-purple-700"></h2>
+                <p id="aboutDesc" class="text-lg text-gray-700 leading-relaxed"></p>
+                <div id="aboutTags" class="flex space-x-4 mt-4"></div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-white fade-in-section">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center text-gray-900">Projects</h2>
-            <div class="mt-8 overflow-x-auto">
-                <table class="min-w-full table-auto" id="projectsTable">
-                    <thead>
-                        <tr>
-                            <th class="px-4 py-2 text-left text-gray-900">SN</th>
-                            <th class="px-4 py-2 text-left text-gray-900">Description</th>
-                            <th class="px-4 py-2 text-left text-gray-900">Technologies Used</th>
-                            <th class="px-4 py-2 text-left text-gray-900">Databases</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- <tr>
-                            <td class="border px-4 py-2 hover-card">Project One</td>
-                            <td class="border px-4 py-2 hover-card">A web application for managing tasks and projects.</td>
-                            <td class="border px-4 py-2 hover-card">HTML, CSS, JavaScript, Laravel</td>
-                        </tr>
-                        <tr>
-                            <td class="border px-4 py-2 hover-card">Project Two</td>
-                            <td class="border px-4 py-2 hover-card">An e-commerce platform with user authentication.</td>
-                            <td class="border px-4 py-2 hover-card">HTML, CSS, JavaScript, Django</td>
-                        </tr>
-                        <tr>
-                            <td class="border px-4 py-2 hover-card">Project Three</td>
-                            <td class="border px-4 py-2 hover-card">A personal blog website with content management.</td>
-                            <td class="border px-4 py-2 hover-card">HTML, CSS, JavaScript, ASP.NET</td>
-                        </tr> -->
-                    </tbody>
-                </table>
+<!-- Projects Section -->
+<section id="projects" class="py-20 fade-in-section bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-extrabold text-center text-purple-700 mb-12">Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
+            <!-- Project cards populated by JS -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 fade-in-section">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-purple-700 mb-12">Education</h2>
+            <div class="grid md:grid-cols-2 gap-8" id="educationGrid">
+                <!-- Education cards populated by JS -->
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-16 bg-gray-200 fade-in-section">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center text-gray-900">Education</h2>
-            <p class="mt-4 text-lg text-center text-gray-700 text-justify">I am currently studying for an undergraduate degree in Computer Applications. Through my studies, I have learned the basics of programming, web development, and mobile app development.</p>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white fade-in-section">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center text-gray-900">Contact</h2>
-            <p class="mt-4 text-lg text-center text-gray-700">Feel free to reach out to me at
-                <a href="mailto:anantapoudyal24@gmail.com" class="text-blue-500">anantapoudyal24@gmail.com</a>.</p>
+    <section id="contact" class="py-20 fade-in-section bg-gradient-to-r from-purple-50 via-pink-50 to-blue-50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-purple-700 mb-12">Contact Me</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl p-6 hover:scale-105 transition transform flex flex-col items-center border-t-4 border-purple-500">
+                    <i class="fas fa-envelope text-purple-700 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-purple-700 mb-2">Email</h3>
+                    <p class="text-gray-700 mb-2">anantapoudyal24@gmail.com</p>
+                    <a href="mailto:anantapoudyal24@gmail.com"
+                        class="mt-2 px-4 py-2 rounded-full bg-purple-600 text-white font-semibold hover:bg-purple-700 transition">Send
+                        Email</a>
+                </div>
+                <div
+                    class="bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl p-6 hover:scale-105 transition transform flex flex-col items-center border-t-4 border-purple-500">
+                    <i class="fas fa-user-circle text-purple-700 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-purple-700 mb-2">Social</h3>
+                    <div class="flex space-x-6 mt-4">
+                        
+                        <a href="https://github.com/AnantaPoudyal" class="text-purple-700 hover:text-purple-900 text-3xl" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <script src="./js/time.js"></script>
-    <!-- Scripts -->
-    <script>
-        // Smooth scrolling for links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Mobile menu toggle
-        document.getElementById('menuButton').addEventListener('click', function () {
-            var menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        });
-
-
-        const projectData = [
-            {
-                "description": "a simple sample project based on laravel",
-                "technologies": "HTML, CSS, JavaScript, Laravel",
-                "databases": "MySQL",
-            },
-            {
-                "description": "Online Cloth recommendation system",
-                "technologies": "HTML, CSS, JavaScript, Django",
-                "databases": "MySQL",
-            },
-            {
-                "description": "online food odering system",
-                "technologies": "HTML, CSS, JavaScript, ASP.NET",
-                "databases": "MySQL",
-            }
-        ];
-         // Function to populate the table with JSON data
-         function populateTable(data) {
-            const tableBody = document.querySelector('#projectsTable tbody');
-            tableBody.innerHTML = ''; // Clear existing rows
-
-            data.forEach((project,index) => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td class="border px-4 py-2">${index + 1}</td>
-                    <td class="border px-4 py-2">${project.description}</td>
-                    <td class="border px-4 py-2">${project.technologies}</td>
-                    <td class="border px-4 py-2">${project.databases}</td>
-                `;
-                tableBody.appendChild(row);
-            });
-        }
-
-        // Call function to populate the table
-        populateTable(projectData);
-    </script>
+    <!-- Footer -->
+    <footer id="footer" class="bg-white/90 backdrop-blur-lg shadow-inner mt-20"></footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
