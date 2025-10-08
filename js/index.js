@@ -70,10 +70,9 @@ const projects = [
     description: "A .NET MAUI mobile app featuring three algorithm-based games: Tic-Tac-Toe, 8 Puzzle, and N-Queen.", 
     technologies: ".NET MAUI, C#", 
     algorithms: "Alpha-Beta Pruning, A* (Manhattan Distance), Brute Force, Backtracking",
+    databases: "Not Used",
     svg: `
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C6.48 2 2 6.48..." fill="#4F46E5"/>
-      </svg>
+      <img src="./images/MindGames.jpg" width=250px></img>
     `
   }
 ];
