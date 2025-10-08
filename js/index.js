@@ -29,9 +29,7 @@
                 contact: {
                     email: "anantapoudyal24@gmail.com",
                     social: [
-                        { icon: "fab fa-linkedin", href: "#" },
-                        { icon: "fab fa-github", href: "#" },
-                        { icon: "fab fa-twitter", href: "#" }
+                        { icon: "fab fa-github", href: "https://github.com/killer48-ops" },
                     ]
                 },
                 copyright: "© 2025 Ananta Poudyal. All rights reserved."
