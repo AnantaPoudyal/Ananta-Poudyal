@@ -13,10 +13,36 @@
                 image: "./images/my.jpeg",
                 tags: ["Web Developer", "Full Stack", "Problem Solver"]
             },
-            education: [
-                { institution: "Patan Multiple Campus", degree: "Bachelor of Computer Application", location: "Patan Dhoka, Lalitpur", graduation: "Expected Graduation: Fall 2025", icon: "fas fa-university", color: "purple" },
-                { institution: "Capital Secondary School", degree: "High School (+2)", location: "Koteshwor, Kathmandu", graduation: "", icon: "fas fa-school", color: "pink" }
-            ],
+            // education: [
+            //     { institution: "Patan Multiple Campus", degree: "Bachelor of Computer Application", location: "Patan Dhoka, Lalitpur", graduation: "Expected Graduation: Fall 2025", icon: "fas fa-university", color: "purple" },
+            //     { institution: "Capital Secondary School", degree: "High School (+2)", location: "Koteshwor, Kathmandu", graduation: "", icon: "fas fa-school", color: "pink" }
+            // ],
+         education: [
+    {
+        institution: "Patan Multiple Campus",
+        degree: "Bachelor of Computer Application",
+        location: "Patan Dhoka, Lalitpur",
+        graduation: "Graduated: Fall 2025",
+        icon: "fas fa-university",
+        color: "purple"
+    },
+    {
+        institution: "Capital Secondary School",
+        degree: "High School (+2, Management)",
+        location: "Koteshwor, Kathmandu",
+        graduation: "Graduated: 2021", // update with actual year if different
+        icon: "fas fa-school",
+        color: "pink"
+    },
+    {
+        institution: "Kanjirowa National School",
+        degree: "Secondary Education Examination (SEE)",
+        location: "Koteshwor, Kathmandu",
+        graduation: "Graduated: 2019", // update with actual year if different
+        icon: "fas fa-graduation-cap",
+        color: "blue"
+    }
+],
           
             footer: {
                 about: "I’m a web developer passionate about building beautiful, functional, and modern web applications. Always eager to learn new technologies and enhance my skills.",
