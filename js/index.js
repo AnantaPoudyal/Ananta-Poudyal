@@ -20,6 +20,14 @@
          education: [
     {
         institution: "Patan Multiple Campus",
+        degree: "Masters of Computer Application",
+        location: "Patan Dhoka, Lalitpur",
+        graduation: "Graduated: Fall 2027",
+        icon: "fas fa-university",
+        color: "purple"
+    },
+          {
+        institution: "Patan Multiple Campus",
         degree: "Bachelor of Computer Application",
         location: "Patan Dhoka, Lalitpur",
         graduation: "Graduated: Fall 2025",
