@@ -52,12 +52,12 @@
                     { text: "Education", href: "#education" },
                     { text: "Contact", href: "#contact" }
                 ],
-                contact: {
-                    email: "anantapoudyal24@gmail.com",
-                    social: [
-                        { icon: "fab fa-github", href: "https://github.com/killer48-ops" },
-                    ]
-                },
+                // contact: {
+                //     email: "anantapoudyal24@gmail.com",
+                //     social: [
+                //         { icon: "fab fa-github", href: "https://github.com/killer48-ops" },
+                //     ]
+                // },
                 copyright: "© 2025 Ananta Poudyal. All rights reserved."
             }
         };
